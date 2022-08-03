@@ -14,4 +14,11 @@ public abstract class MainPage {
     @FindBy(xpath = "(//a[@itemprop='url'])")
     public WebElement tshirtButton;
 
+    @FindBy(xpath = "//a[@class='login']")
+    public WebElement signInButton;
+
+    @FindBy(xpath = "//a[@title='Women']")
+    public WebElement womenButton;
+
+
 }
