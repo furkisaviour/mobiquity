@@ -5,6 +5,7 @@ import com.mobiquity.utilities.BrowserUtils;
 import com.mobiquity.utilities.ConfigurationReader;
 import com.mobiquity.utilities.Driver;
 import io.cucumber.java.en.*;
+import org.junit.Assert;
 
 public class SortingStepDefinitions {
 
@@ -25,10 +26,11 @@ public class SortingStepDefinitions {
     @When("user clicks highest first")
     public void user_clicks_highest_first() {
         womenPage.dropdownList.get(2).click();
-        BrowserUtils.wait(10);
+        BrowserUtils.wait(5);
     }
     @Then("user should see highest product")
     public void user_should_see_highest_product() {
-
+        String expectedHighestProduct = "Printed Dress";
+        Assert.assertEquals(expectedHighestProduct,womenPage.firstProduct.getText());
     }
 }
