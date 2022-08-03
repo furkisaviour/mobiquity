@@ -17,6 +17,9 @@ public class SignInPage extends MainPage{
     @FindBy(id = "passwd")
     public WebElement passwordBox;
 
+    @FindBy(id = "SubmitLogin")
+    public WebElement submitButton;
+
     @FindBy(xpath = "//div[@class='alert alert-danger']//child::p")
     public WebElement dangerMessage;
 

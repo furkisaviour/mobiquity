@@ -1,4 +1,3 @@
-@smoke
 Feature: Sorting functionality
       Agile Story = As a user ,when I click the Price highest first from
       sorting selecting , I should be able to see highest one
