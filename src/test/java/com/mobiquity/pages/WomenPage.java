@@ -19,4 +19,9 @@ public class WomenPage extends MainPage{
 
     @FindBy(xpath = "//option")
     public List<WebElement> dropdownList;
+
+    @FindBy(xpath = "(//a[@title='Faded Short Sleeve T-shirts'])[2] ")
+    public WebElement firstProduct;
+
+
 }
