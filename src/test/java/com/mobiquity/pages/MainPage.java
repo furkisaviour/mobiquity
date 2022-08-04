@@ -11,7 +11,7 @@ public abstract class MainPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "(//a[@itemprop='url'])")
+    @FindBy(xpath = "(//a[@class='product-name'])[1]")
     public WebElement tshirtButton;
 
     @FindBy(xpath = "//a[@class='login']")

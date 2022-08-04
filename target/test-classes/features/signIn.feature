@@ -1,4 +1,4 @@
-@smoke
+@miniRegression
 Feature: Sing in functionality
 
   Background: user is on main page
