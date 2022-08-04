@@ -6,9 +6,9 @@ Feature: Sing in functionality
 
   Scenario Outline:login with invalid credentials
          When user clicks Sign-in button
-         And user enters "<email>" to email text area
-         And user enters "<password>" to password text area
-         And user clicks login button
+         And  user enters "<email>" to email text area
+         And  user enters "<password>" to password text area
+         And  user clicks login button
          Then user should see danger message
 
          Examples:
